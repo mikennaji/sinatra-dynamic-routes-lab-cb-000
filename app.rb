@@ -21,5 +21,5 @@ class App < Sinatra::Base
    "#{@number}*#{@phrase}"
   end
 
-  
+
 end
