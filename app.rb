@@ -8,4 +8,18 @@ class App < Sinatra::Base
     "#{@reversename}"
 
   end
+
+  get "/square/:number" do
+    @number = params[:number].to_i
+    @square = @number * @number
+    "@square"
+  end
+
+  get "/say/:number/:phrase" do
+   @number = params[:number].to_i
+   @phrase =  params[:phrase]
+   "#{@number}*#{@phrase}"
+  end
+
+  
 end
